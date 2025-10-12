@@ -1,59 +1,60 @@
-# AngularCourse
+# Angular Course — Introduction
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+Welcome to the **Angular Course** repository — a beginner‑friendly, hands‑on path to learning Angular from the ground up.  
+This README is intended to give instructors and students a concise orientation to the course: goals, prerequisites, structure, teaching approach, and how to use this repo.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎯 Course Goal
 
-```bash
-ng serve
-```
+By the end of this course students will be able to:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* Understand Angular architecture, components, modules, and services.
+* Build real-world single‑page applications using Angular CLI, TypeScript.
+* Implement routing, forms (template-driven & reactive), HTTP integration, and state management basics.
+* Test components and services and follow Angular best practices.
 
-## Code scaffolding
+## 🧰 Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Students should have:
 
-```bash
-ng generate component component-name
-```
+* Basic knowledge of HTML, CSS, and JavaScript.
+* Familiarity with ES6+ JavaScript features (let/const, arrow functions, modules).
+* Basic command-line usage and Git (recommended but not strictly required).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧭 Course Structure (Overview)
 
-```bash
-ng generate --help
-```
+The course is designed of instruction with a mix of lectures, live coding, and exercises.  
+Each day focuses on a specific topic and builds on previous lessons. This repository contains:
 
-## Building
+* `course-docs` — contains lesson notes, code snippets and exercises for each topic
 
-To build the project run:
+## 🧑‍🏫 Teaching Approach
 
-```bash
-ng build
-```
+* **Start simple:** Begin with Angular CLI and a minimal app to demonstrate component structure.
+* **Incremental complexity:** Introduce features one at a time (components → templates → bindings → services → routing → forms → HTTP) with short demos and exercises.
+* **Hands-on labs:** Each lesson includes a small lab or coding challenge for immediate practice.
+* **Code reviews & pair programming:** Encourage students to submit PRs and review each other's code.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📚 Key Topics Covered
 
-## Running unit tests
+* Angular CLI & project setup
+* TypeScript fundamentals for Angular
+* Components, templates, and data binding
+* Directives & pipes
+* Services and dependency injection
+* Routing and navigation
+* Template-driven & reactive forms
+* HTTP client and REST integration
+* Observables and RxJS basics
+* State management patterns (simple service + BehaviorSubject)
+* Unit testing components and services
+* Production builds and deployment tips
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📖 Resources & References
 
-```bash
-ng test
-```
+* Official Angular docs: [https://angular.io](https://angular.io)
+* TypeScript handbook: [https://www.typescriptlang.org](https://www.typescriptlang.org)
+* RxJS docs: [https://rxjs.dev](https://rxjs.dev)
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
