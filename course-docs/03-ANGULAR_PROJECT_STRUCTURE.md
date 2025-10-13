@@ -132,7 +132,7 @@ bootstrapApplication(App, appConfig)
 
 ## 💻 Demo: Modify App Title
 
-1. Open `src/app/app.component.html`.
+1. Open `src/app/app.html`.
 2. Change the default text:
 
 ```html
@@ -141,4 +141,3 @@ bootstrapApplication(App, appConfig)
 
 3. Save the file — Angular’s live reload (via `ng serve`) will automatically update the browser.
 
-✅ You’ve now explored the project structure and made your first modification to the app!
