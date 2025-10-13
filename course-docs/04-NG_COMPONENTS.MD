@@ -47,12 +47,12 @@ This will automatically:
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-task-list',
+  selector: 'app-task-list-component',
   imports: [],
-  templateUrl: './task-list.html',
-  styleUrl: './task-list.css'
+  templateUrl: './task-list-component.html',
+  styleUrl: './task-list-component.css'
 })
-export class TaskList {
+export class TaskListComponent {
   tasks = ['Learn Angular', 'Build Task App', 'Review Code'];
 }
 ```
@@ -88,11 +88,11 @@ li {
 
 ## 🧩 Add Task List Component to App Template and App Component
 
-Now display this new component inside `app.component.html`:
+Now display this new component inside `app.html`:
 
 ```html
 <h1>Welcome to Angular Course App 🚀</h1>
-<app-task-list></app-task-list>
+<app-task-list-component></app-task-list-component>
 ```
 
 Import the Component in App Component  
@@ -100,11 +100,11 @@ Open your app/app.ts file and make sure it looks like this:
 
 ```typescript
 import { Component } from '@angular/core';
-import { TaskList } from './task-list/task-list';
+import { TaskListComponent } from './task-list/task-list';
 
 @Component({
   selector: 'app-root',
-  imports: [TaskList],
+  imports: [TaskListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

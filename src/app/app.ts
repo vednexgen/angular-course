@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { TaskList } from './task-list/task-list';
+import { TaskListComponent } from './task-list-component/task-list-component';
 
 @Component({
   selector: 'app-root',
-  imports: [TaskList],
+  imports: [TaskListComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = 'angular-course';
+  
 }
