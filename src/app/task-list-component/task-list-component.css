@@ -16,3 +16,15 @@ li {
   vertical-align: middle;
   margin-right: 4px;
 }
+
+.completed {
+  text-decoration: line-through;
+}
+
+.pending {
+  font-weight: bold;
+}
+
+button {
+  margin-left: 10px;
+}

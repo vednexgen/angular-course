@@ -1,12 +1,26 @@
 <h2>📝 Task List</h2>
 
 <div>
-  <input [(ngModel)]="newTask" placeholder="Enter new task" />
+  <input [(ngModel)]="newTask.name" placeholder="Enter new task" />
   <button (click)="onAddTask()"> Add New Task</button>
 </div>
 
 <ul>
-  @for (task of tasks; track task) {
-  <li><img [src]="taskImageUrl" alt="Task Image" class="task-icon" /> <span> {{ task }} </span> </li>
+  @for (task of tasks; track task.name) {
+  <li > 
+    <img [src]="taskImageUrl" alt="Task Image" class="task-icon" /> 
+    <span appHighlight="{{task.completed}}" 
+      [ngClass]="{ completed: task.completed, pending: !task.completed }" 
+      [ngStyle]="{ color: task.completed ? 'green' : 'red' }" > 
+      {{ task.name }} :: 
+    </span> 
+    @if (task.completed) {
+      <span> Completed..</span>
+    } @else {
+      <span> Pending..</span>
+    }
+    <button (click)="task.completed = true"> Mark Completed</button>
+    <button (click)="task.completed = false"> Mark Pending</button>
+  </li>
   }
 </ul>

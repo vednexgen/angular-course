@@ -146,8 +146,12 @@ export class TaskListComponent {
 
 <ul>
   @for (task of tasks; track task) {
-  <li><img [src]="taskImageUrl" alt="Task Image" class="task-icon" /> <span> {{ task }} </span> </li>
+  <li><img [src]="taskImageUrl" alt="Task Image" class="task-icon" /> 
+    <span> {{ task }} </span> 
+  </li>
   }
+  <button (click)="task.completed = true"> Mark Completed</button>
+  <button (click)="task.completed = false"> Mark Pending</button>
 </ul>
 ```
 
