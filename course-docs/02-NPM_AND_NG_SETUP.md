@@ -162,11 +162,3 @@ npm install -g @angular/cli@latest
 ```
 
 ---
-
-## Teaching Tip
-
-Do the install live in class (screen share). Show students how to check versions and fix one common error (e.g., PATH or permission) — that helps them gain confidence.
-
----
-
-If you want, I can also add **screenshots** or **platform-specific step-by-step images** for Windows/macOS/Linux, or create a short troubleshooting flowchart.

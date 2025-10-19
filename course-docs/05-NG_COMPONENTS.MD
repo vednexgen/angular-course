@@ -122,9 +122,3 @@ ng serve
 You should now see your task list displayed below the title.
 
 ---
-
-## 💡 Instructor Notes
-
-* Explain how Angular’s **selector** acts like a custom HTML tag.
-* Show students that the component automatically updates when modifying its `tasks` array.
-* Demonstrate how Angular’s live reload works with `ng serve`.
