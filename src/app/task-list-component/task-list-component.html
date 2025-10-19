@@ -1,6 +1,12 @@
 <h2>📝 Task List</h2>
+
+<div>
+  <input [(ngModel)]="newTask" placeholder="Enter new task" />
+  <button (click)="onAddTask()"> Add New Task</button>
+</div>
+
 <ul>
   @for (task of tasks; track task) {
-    <li>{{ task }}</li>
+  <li><img [src]="taskImageUrl" alt="Task Image" class="task-icon" /> <span> {{ task }} </span> </li>
   }
 </ul>

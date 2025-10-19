@@ -8,5 +8,5 @@ import { TaskListComponent } from './task-list-component/task-list-component';
   styleUrl: './app.css'
 })
 export class App {
-  
+  title = "Task Management Applicaiton"
 }
